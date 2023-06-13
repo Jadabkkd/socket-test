@@ -1,5 +1,5 @@
 FROM python:alpine3.7
-WORKDIR /testcase
+WORKDIR /k8stest
 COPY . /
 RUN pip install -r req.txt
 ENV PORT 5000
