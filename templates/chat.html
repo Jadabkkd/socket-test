@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="/static/css/chat.css">
+
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(155, 155, 155);
+    }
+    @font-face {
+        font-family: Prompt-light;
+        src: url(/static/fonts/Prompt/Prompt-Light.ttf);
+    }
+
+    @font-face {
+        font-family: Prompt-med;
+        src: url(/static/fonts/Prompt/Prompt-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: Prompt-reg;
+        src: url(/static/fonts/Prompt/Prompt-Regular.ttf);
+    }
+</style>
+<body>
+    <div class="main-body">
+        <div class="head-nav">
+            <p>CHAT ABC</p>
+        </div>
+        <div class="chat-ctn">
+            <div class="chat-box">
+                <div class="box-left"></div>
+                <div class="box-right"></div>
+            </div>
+            <div class="text-area-ctn">
+                <textarea name="" id="chat-inp"></textarea>
+                <div class="send-btn-ctn">
+                    <span>send</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const socket = io()
+</script>
+</html>

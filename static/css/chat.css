@@ -1,0 +1,92 @@
+.main-body{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head-nav{
+    width: 80%;
+    height: 120px;
+    font-size: 45px;
+    font-family: Prompt-med;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px #ffffff54;
+}
+
+.head-nav p{
+    margin: 0;
+    padding: 0;
+}
+
+.chat-ctn{
+    width: 80%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.chat-box{
+    width: 550px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.chat-box div{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.text-area-ctn{
+    width: 545px;
+    height: 150px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#chat-inp{
+    width: 100%;
+    height: 70%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-family: Prompt-med;
+    font-size: 18px;
+}
+
+.send-btn-ctn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.send-btn-ctn span{
+    font-family: Prompt-med;
+    width: 100px;
+    height: 32px;
+    background-color: #33BBC5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.send-btn-ctn span:hover{
+    background-color: #218f97;
+}
