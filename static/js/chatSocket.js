@@ -1,4 +1,4 @@
-const sendMessage = (socket)=>{
+const sendMessage = ()=>{
     let sendBtn = document.getElementById('send-btn')
     let chatInpForEnt = document.getElementById('chat-inp')
     sendBtn.addEventListener('click',()=>{
@@ -20,7 +20,7 @@ const sendMessage = (socket)=>{
     })
 }
 
-const recieveMessage = (socket)=>{
+const recieveMessage = ()=>{
     let chatBox = document.querySelector('.chat-box')
     socket.on('new_message',(data)=>{
         let chatBoxCnt = document.querySelector('.chat-box').children.length
@@ -38,8 +38,6 @@ const recieveMessage = (socket)=>{
 }
 
 window.addEventListener('load',()=>{
-    const socket = io({autoConnect:false})
-    socket.connect();
-    sendMessage(socket)
-    recieveMessage(socket)
+    sendMessage()
+    recieveMessage()
 })

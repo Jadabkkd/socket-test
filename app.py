@@ -8,6 +8,4 @@ app = Flask(__name__)
 app.config['DEBUG'] = True
 app.register_blueprint(chat)
 socketio.init_app(app)
-
-if __name__ == '__main__':
-    socketio.run(app,port=5000,allow_unsafe_werkzeug=True)
+socketio.run(app,port=5000,allow_unsafe_werkzeug=True)
