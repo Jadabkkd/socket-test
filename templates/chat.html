@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/static/css/chat.css">
 
     <script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+    <script src="/static/js/chatSocket.js"></script>
 </head>
 <style>
     body{
@@ -36,19 +37,14 @@
         </div>
         <div class="chat-ctn">
             <div class="chat-box">
-                <div class="box-left"></div>
-                <div class="box-right"></div>
             </div>
             <div class="text-area-ctn">
-                <textarea name="" id="chat-inp"></textarea>
+                <textarea id="chat-inp"></textarea>
                 <div class="send-btn-ctn">
-                    <span>send</span>
+                    <span id="send-btn">send</span>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<script>
-    const socket = io()
-</script>
 </html>

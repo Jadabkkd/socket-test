@@ -11,16 +11,20 @@
     height: 120px;
     font-size: 45px;
     font-family: Prompt-med;
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: solid 2px #ffffff54;
 }
 
 .head-nav p{
     margin: 0;
     padding: 0;
+    border: solid 3px #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: #218f97;
 }
 
 .chat-ctn{
@@ -38,13 +42,23 @@
     height: 400px;
     background-color: white;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .chat-box div{
-    width: 50%;
-    height: 100%;
+    width: 80%;
+    height: 24px;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.075);
+    color: rgb(0, 0, 0);
+    font-family: Prompt-med;
+    font-size: 16px;
+    display: flex;
+    margin-top: 5px;
 }
 
 .text-area-ctn{
